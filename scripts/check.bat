@@ -1,2 +1,2 @@
 @echo off
-echo successful >> message.txt
+echo successful updated script >> message.txt
