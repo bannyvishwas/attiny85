@@ -1,0 +1,24 @@
+##########################################
+	DigiStump Attiny85
+##########################################
+
+1. Hardware Configuration : DigiSpark Attiny85 (Digistump Mini)
+2. Download  Arduino IDE
+3. Install Arduino IDE for all users (make sure to use local user account with no spaces in username e.g. edith)
+4. Run Arduino IDE and Setup Digistump drivers
+	1. Open Arduino >> Files >> Preferences
+	2. Additional boards URL : http://digistump.com/package_digistump_index.json
+	3. It will automatically download indexes
+	4. Tools >> Boards >> Board Manager
+	5. Search : digistump
+	6. Install Digistump AVR Boards
+	7. Tools >> Boards >> Digistump AVR Boards >> Digispark (Defaults - 16.5mhz)
+	8. Tools >> Programmers >> Micronucleus
+5. Write your script
+6. Verify
+7. Upload
+8. Then plug in Attiny85 attached with USB Cable
+9. Done
+
+
+	
