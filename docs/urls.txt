@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/bannyvishwas/attiny85/master/scripts/check.bat
